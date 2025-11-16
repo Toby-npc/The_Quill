@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book Store — Demo</title>
+  <meta name="description" content="Demo bookstore layout" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Promo bar -->
+  <div class="promo-bar">
+    FREE SHIPPING WITH A MINIMUM SPEND OF RM80.00 (PENINSULAR MALAYSIA ONLY)
+    <button class="promo-arrow" aria-hidden="true">»»»</button>
+  </div>
+
+  <!-- Top utility -->
+  <div class="top-utility">
+    <div class="container top-inner">
+      <div class="quick-links">
+        <a href="#">Find a store</a>
+        <a href="#">Events</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="currency">MYR ▾</div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="logo" href="#">book<span class="accent">xcess</span></a>
+      </div>
+
+      <form class="search" role="search" aria-label="Search books">
+        <input type="search" placeholder="Find books by interest, keyword, title, author, ISBN" aria-label="Search" />
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+
+      <div class="header-actions">
+        <button class="account" aria-label="Account">👤 ACCOUNT LOGIN / SIGN UP ▾</button>
+        <div class="cart" aria-label="Cart">RM 0.00 <span class="cart-bubble">0</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Category nav -->
+  <nav class="category-nav" aria-label="Categories">
+    <div class="container">
+      <ul class="categories">
+        <li>Categories ▸</li>
+        <li><a href="#">Fiction</a></li>
+        <li><a href="#">Non-Fiction</a></li>
+        <li><a href="#">Children</a></li>
+        <li><a href="#">Malay Books</a></li>
+        <li><a href="#">Stationery</a></li>
+        <li><a href="#">Gift Ideas</a></li>
+        <li><a href="#">Bargain Corner</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner carousel -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="banner-slider" id="bannerSlider" aria-roledescription="carousel">
+        <div class="banner" style="background-image:url('https://via.placeholder.com/1200x280/ff9f9f/fff?text=Marvelous+Member%27s+Discount');"></div>
+        <div class="banner" style="background-image:url('https://via.placeholder.com/1200x280/ffd59f/333?text=Get+5%25+Off+Promo');"></div>
+        <div class="banner" style="background-image:url('https://via.placeholder.com/1200x280/9fe6ff/033?text=New+Arrivals');"></div>
+      </div>
+      <div class="banner-controls" id="bannerDots" role="tablist" aria-label="Banner controls"></div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="new-arrivals container">
+    <div class="section-head">
+      <h2>NEW ARRIVALS! 🔥🔥</h2>
+      <a class="shop-more" href="#">SHOP FOR MORE</a>
+    </div>
+
+    <div class="carousel-wrap">
+      <button class="carousel-btn left" id="prodPrev" aria-label="Previous">‹</button>
+      <div class="product-carousel" id="productCarousel" tabindex="0" aria-live="polite"></div>
+      <button class="carousel-btn right" id="prodNext" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bookxcess Demo — Built with care.</p>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
